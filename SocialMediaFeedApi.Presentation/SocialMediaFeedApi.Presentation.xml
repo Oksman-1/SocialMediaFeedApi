@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SocialMediaFeedApi.Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.LikePostsController.GetLikesByUser(System.Guid)">
+            <summary>
+            Gets a list of likes by a User
+            </summary>
+            <returns>A list of likes by a User</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.LikePostsController.LikePost(System.Guid,System.Guid)">
+            <summary>
+            To Like a Post
+            </summary>
+            <param name="userId"></param>
+            /// <param name="postId"></param>
+            <returns>Ok Message</returns>
+            <response code="200">Ok</response>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.LikePostsController.UnLikePost(System.Guid,System.Guid)">
+            <summary>
+            To Unlike a Post
+            </summary>
+            <returns>No Content</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.PostFeedController.GetPostsByUser(System.Guid,Shared.RequestFeatures.PaginationParameters)">
+            <summary>
+            Gets a list Posts by a User by userId
+            </summary>
+            <returns>A list of posts by a User</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.PostFeedController.GetPostFeedByUserAndUsersFollowedAsync(System.Guid,Shared.RequestFeatures.PaginationParameters)">
+            <summary>
+            Gets a list of Posts by User and users followed
+            </summary>
+            <returns>A list of Posts by User and users followed</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.PostFeedController.GetPostById(System.Guid,System.Guid)">
+            <summary>
+            Gets a Post by a User by userId and postId
+            </summary>
+            <returns>A post by a User</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.PostFeedController.CreatePostForUser(System.Guid,Shared.DataTranferObjects.PostForCreationDTO)">
+            <summary>
+            Creates a new post by a User
+            </summary>
+            <param name="userId"></param>
+            <param name="postForCreationDTO"></param>
+            <returns>A newly created user post</returns>
+            <response code="201">Returns the newly created user post</response>
+            <response code="400">If the item is null</response>
+            <response code="422">If the model is invalid</response>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.PostFeedController.DeletePostForUser(System.Guid,System.Guid)">
+            <summary>
+            Deletes a User post
+            </summary>
+            <returns>No Content</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.UsersController.GetUsers">
+            <summary>
+            Gets the list of all Users
+            </summary>
+            <returns>The list of all users</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.UsersController.GetSchool(System.Guid)">
+            <summary>
+            Gets a User by Id
+            </summary>
+            <returns>A user by Id</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.UsersController.CreateUser(Shared.DataTranferObjects.UserForCreationDTO)">
+            <summary>
+            Creates a new User
+            </summary>
+            <param name="user"></param>
+            <returns>A newly created user</returns>
+            <response code="201">Returns the newly created user</response>
+            <response code="400">If the item is null</response>
+            <response code="422">If the model is invalid</response>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.UsersController.DeleteUser(System.Guid)">
+            <summary>
+            Deletes a User
+            </summary>
+            <returns>No Content</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.UsersFollowedController.GetUsersFollowedById(System.Guid)">
+            <summary>
+            Gets a list users followed by a User
+            </summary>
+            <returns>A list of users followed by a User</returns>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.UsersFollowedController.FollowUser(System.Guid,System.Guid)">
+            <summary>
+            To follow a user
+            </summary>
+            <param name="userId"></param>
+            /// <param name="followerId"></param>
+            <returns>Ok Message</returns>
+            <response code="200">Ok</response>
+        </member>
+        <member name="M:SocialMediaFeedApi.Presentation.Controllers.UsersFollowedController.UnFollowUser(System.Guid,System.Guid)">
+            <summary>
+            To Unfollow a user
+            </summary>
+            <returns>No Content</returns>
+        </member>
+    </members>
+</doc>
